@@ -88,6 +88,9 @@ matchAge[1].innerHTML = 68;
  //div with class name of status
  //div with class anem of Motto
 
-
-
-
+document.getElementsByClassName('other')[2].src = 'https://assets3.thrillist.com/v1/image/1514690/size/tmg-article_default_mobile;jpeg_quality=20.jpg'; // NOTE: you would not use the innerHTML b/c for images, there is no text stored <>here<>, like with <div>
+matchName[2].innerHTML = 'Bee';
+matchAge[2].innerHTML = 41;
+matchStatus[2].innerHTML = 'Complicated';
+var matchMotto = document.getElementsByClassName('motto');
+matchMotto[2].innerHTML = 'Welcome to Jollibee!';
