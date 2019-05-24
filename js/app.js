@@ -52,17 +52,21 @@ data.appendChild(divWants)
 
 //9. In the div id profile section, create a paragraph element with an id of pro2 and create a your own profile for Ronald (at least 2 sentences).
 
-/*var revisedProfile = document.createElement('p');
-revisedProfile.id = 'pro2';
-revisedProfile.innerHTML = "Hey my name is Ronald. I'll pay for dinner."
-profile.replaceChild(revisedProfile)*/
-
 var revisedProfile = document.getElementById('pro1');
 revisedProfile.innerHTML = "Hey my name is Ronald. I have lots of money from my multiple franchises. Dinner is my treat."; 
 
 //10. In the div id matches section, target the first div element with the class name of firstName and change Name to Wendy.
 
+var matchName = document.getElementsByClassName('firstName');
+matchName[0].innerHTML = 'Wendy';
+
+/* MISTAKE: var matchName = document.getElementsByClassName('firstName');
+matchName.innerHTML = 'Wendy'; */
+
 //11. In the div id matches section, target the first div element with the class name of otherAge and change Age to 48.
+
+var matchAge = document.getElementsByClassName('otherAge');
+matchAge[0].innerHTML = 48;
 
 //12. In the div id matches section, target the first div element with the class name of status and change Status to Single Mother.
 
