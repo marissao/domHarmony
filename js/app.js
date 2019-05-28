@@ -5,22 +5,28 @@
 var spanMatch = document.getElementById('matCount');
 spanMatch.innerHTML = 11;
 
-// SHORCUT: matCount.innerHTML = 55;
+//SHORCUT: matCount.innerHTML = 55;
 
 //2. In the nav element, target the span element with the id of 'msgCount' and change the number from 0 to 23.
 
 var spanMsg = document.getElementById('msgCount');
 spanMsg.innerHTML = 23;
 
+//SHORTCUT: msgCount.innerHTML =23;
+
 //3. In the div id data section, target the div element with the id of 'fullname' and change Full Name to Ronald McDonald.
 
 var divFullName = document.getElementById('fullname');
 divFullName.innerHTML = 'Ronald McDonald';
 
+//SHORTCUT: fullname.innerHTML = 'Ronald McDonald';
+
 //4. In the div id data section, target the div element with the id of 'age' and change Age to 63 Years Old.
 
 var divAge = document.getElementById('age');
 divAge.innerHTML = 63;
+
+//SHORTCUT: age.innerHTML = '63 Years Old'
 
 //5. In the div id data section, create a div with an id of job and give it the following information: Clown and Restauranteur.
 
@@ -28,6 +34,8 @@ var divJob = document.createElement('div');
 divJob.id = 'job';
 divJob.innerHTML = 'Clown and Restauranteur';
 data.appendChild(divJob)
+
+/* parent.appendChild(var) shows where to attach the new element that you created in your HTML*/
 
 //6. In the div id data section, create a div with an id of hobbies and give it the following information: Long romantic walks on the beach, candle light Big Mac dinners and tormenting the King.
 
@@ -52,8 +60,14 @@ data.appendChild(divWants)
 
 //9. In the div id profile section, create a paragraph element with an id of pro2 and create a your own profile for Ronald (at least 2 sentences).
 
-var revisedProfile = document.getElementById('pro1');
-revisedProfile.innerHTML = "Hey my name is Ronald. I have lots of money from my multiple franchises. Dinner is my treat."; 
+var revisedProfile = document.createElement('p');
+revisedProfile.id = 'pro2';
+revisedProfile.innerHTML = "So let's get dinner. I have lots of money from my multiple franchises. Dinner is my treat.";
+profile.appendChild(revisedProfile)
+
+/* MY ORIGINAL ANSWER:
+var revisedProfile =  document.getElementById('pro1');
+revisedProfile.innerHTML = "Hey my name is Ronald. I have lots of money from my multiple franchises. Dinner is my treat."; */
 
 //10. In the div id matches section, target the first div element with the class name of firstName and change Name to Wendy.
 
@@ -71,7 +85,7 @@ matchAge[0].innerHTML = 48;
 //12. In the div id matches section, target the first div element with the class name of status and change Status to Single Mother.
 
 var matchStatus = document.getElementsByClassName('status');
-matchStatus[0].innerHTML = 'Mother';
+matchStatus[0].innerHTML = 'Single Mother';
 
 //13. In the div id matches section, target the second div element with the class name of firstName and change Name to Peko Chan.
 
